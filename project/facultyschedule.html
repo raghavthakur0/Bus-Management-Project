@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/faculty.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<title>Edit Schedule</title>
+
+</head>
+
+<body>
+    <div class="container">
+            <nav>
+                    <ul class="nav nav-justified">
+                        <li><a href="adminhome.html">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="adminschedule.html">Edit Schedule</a></li>
+                        <li><a href="viewschedule.html">View Schedule</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </nav>
+
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+                <div class="form-inline">
+                        <h1>EDIT SCHEDULE HERE</h1>
+                        <input id="busNo" type="text" class="form-control" placeholder="Enter Bus No: ">
+                        <input id="pickUp" type="text" class="form-control" placeholder="Enter PickUp Point: ">
+                        <input id="arrivalTime" type="text" class="form-control" placeholder="Enter Arrival Time: ">
+                        <input id= "dropPoint" type="text" class="form-control" placeholder="Enter Drop Point: ">
+                        <input id= "dropTime" type="text" class="form-control" placeholder="Enter Drop Time:"></td><br>     
+                        <button class="btn btn-success" onclick="addValue();">Add Schedule</button>  
+                        <button class="btn btn-primary" onclick="editVal();">Edit Schedule</button>
+                        <button class="btn btn-danger" onclick="removeSelected();">Remove Selected Schedule</button>
+                    </div>
+                
+            
+                
+                    <div class="table1">
+                        <table class="table table-hover" id="table">
+                            <thead>
+                                <th>Bus No.</th>
+                                <th>PickUp Point</th>
+                                <th>Arrival Time</th>
+                                <th>Drop Point</th>
+                                <th>Drop Time</th>
+                            </thead>
+                            <tbody>
+                                <td>B-101</td>
+                                <td>Pinjore</td>
+                                <td>8:00 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:30 am</td>
+                            </tbody>
+                        </table>
+                    </div>
+        </div>
+    </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="library/script1.js"></script>
+	<script>
+	</script>
+
+</body>
+
+</html>

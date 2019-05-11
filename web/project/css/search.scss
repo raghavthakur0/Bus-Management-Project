@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+html
+{
+   body
+   {
+       margin: 0;
+       padding: 0;
+       height: 100%;
+   }
+}
+body
+{
+    background: url(../images/2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container
+{
+    .nav-justified
+    {
+        background-color: transparent;
+        font-size: 20px;
+        font-family: 'Vollkorn', serif;
+
+
+        a{
+            color: whitesmoke;
+        }
+        a:hover{
+            background-color: #dae0e2;
+            color: black;
+        }
+    }
+}
+
+.container{
+    .jumbotron{
+        h3{
+            text-align: center;
+        }
+        margin-top: 50px;
+        background-color: #99AAAB;
+        color: Black;
+        .table-hover
+        {
+            color: black;
+
+        }
+    }
+}
+
+footer
+{
+    text-align: center;
+    color: white;
+}
+

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+html body {
+  height: 100%;
+}
+
+body {
+  background: url(../images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container .nav-justified {
+  background-color: transparent;
+  font-size: 20px;
+  font-family: 'Vollkorn', serif;
+}
+
+.container .nav-justified a {
+  color: whitesmoke;
+}
+
+.container .nav-justified a:hover {
+  background-color: #dae0e2;
+  color: black;
+}
+
+.main {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 300px auto;
+}
+
+.main .box {
+  position: relative;
+  width: calc(600px - 40px);
+  height: calc(300px - 30px);
+  background: #000;
+  float: left;
+  margin: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.main .box .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.main .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.main .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.main .box .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.main .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.main .box:hover .icon .fa {
+  font-size: 40px;
+}
+
+.main .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.main .box:nth-child(1) {
+  background-color: #2f363f;
+}
+
+.main .box:nth-child(1) .icon {
+  background-color: #319635;
+}
+
+.main .box:nth-child(2) {
+  background-color: #758aa2;
+}
+
+.main .box:nth-child(2) .icon {
+  background-color: #d03852;
+}
+
+.main .box:nth-child(3) {
+  background-color: #3c40c6;
+}
+
+.main .box:nth-child(3) .icon {
+  background-color: #1bca9b;
+}
+
+.main .text {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=home.css.map */

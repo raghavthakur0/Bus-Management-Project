@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+
+	<title>LogIn</title>
+
+
+	
+</head>
+
+<body>
+
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+<!--
+               <div class="left-section">
+                   <img src="bg1.jpeg" class="c1">
+               </div>
+-->
+            </div>
+            <div class="col-md-4 right-section">
+               <div class="login-form">
+                  <h1>Log In</h1>
+                   <form action="../LogServlet" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username :</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                            
+                        </div>
+                         <div class="form-group">
+                            <label for="password">Password :</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                            
+                        </div>
+                        <div class="form-group">
+                  <label>Select User:</label>
+                  <select class="form-control" name="selects">
+                    <option value="Admin">Admin</option>
+                    <option value="Faculty">Faculty</option>
+                    <option value="User">User</option>
+                  </select>
+                </div>
+                       <button type="submit" class="btn btn-success btn1">Log In</button>
+                       
+                    </form>
+               </div>
+                           
+            </div>
+        </div>
+    
+    
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+        function validation()
+        {
+        var v1=document.forms["myform"]["Uname"].value;
+            var v2=document.forms["myform"]["Pwd"].value;
+            var flag=true;
+            if(v1 == "")
+                {
+                alert("Name is required.");
+                    flag=false;
+          }
+            if(v2 == "")
+                {
+                    alert("Password is required.")
+                    flag=false;
+                }
+            return flag;
+}
+	</script>
+
+</body>
+
+</html>

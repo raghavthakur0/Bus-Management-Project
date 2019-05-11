@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(bg1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-form{
+    margin: 128px auto;
+    padding: 15px;
+}
+
+.right-section{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    
+}
+.btn1
+{
+padding: 14px 30px;
+    font-size: 20px;
+}

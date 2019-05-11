@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+
+body{
+    background: url(../images/2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.btn{
+    margin: 25px;
+}
+.form-inline
+{
+    background: linear-gradient(#536976,#292e49) ;
+}
+.container .nav-justified {
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+  }
+.container .nav-justified a {
+    color: whitesmoke;
+  }
+  
+  .container .nav-justified a:hover {
+    background-color: #dae0e2;
+    color: black;
+  }
+
+.container .jumbotron{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 250px;
+    
+}
+
+.jumbotron th{
+    text-align: center;
+}
+
+.form-inline h1{
+    text-align:center;
+    margin-bottom: 30px;
+    font-family: 'Bree Serif', serif;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Search</title>
+</head>
+<body ng-app = "myModule">
+        <div class="container">
+                                     <nav>
+                            <ul class="nav nav-justified">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="search.html">Search</a></li>
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </nav>
+                
+            <div   class="jumbotron">
+                    <div ng-controller = "myController">
+                         <label for="search">
+                                <span><i class="fa fa-search"></i></span>
+                         </label> 
+                              <input type="text" placeholder="Search here" ng-model = "searchText">
+                            <br> <br>
+                            <table class="table table-hover">
+                                    <thead>
+                                        <th>Bus No.</th>
+                                        <th>Pick-Up Place</th>
+                                        <th>Arrival Time</th>
+                                        <th>Drop Place</th>
+                                        <th>Drop Time</th>
+                                    </thead>
+                                    <tbody ng-repeat = "schedules in schedule | filter : search">
+                                        <td> {{ schedules.busno }} </td>
+                                        <td> {{ schedules.pick_upPlace }} </td>
+                                        <td> {{ schedules.arrivalTime }} </td>
+                                        <td> {{ schedules.dropPlace }} </td>
+                                        <td> {{ schedules.dropTime }} </td>
+                                    </tbody>
+                                    </table>
+                    </div>
+            </div>
+        </div>
+    
+
+        <script src="library/script.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+        
+    </body>
+</html>
